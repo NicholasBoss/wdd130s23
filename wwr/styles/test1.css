@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond&display=swap');
+
+:root {
+  /* main colors */
+  --primary-color: #87F1FF   ;
+  --secondary-color: #D5A021 ;
+  --accent1-color: #FB62F6;
+  --accent2-color: #396E94;
+  --paragraph-color-on-color: darkmagenta; /* paragraph text on a colored background */ 
+  --paragraph-background-color: beige  ; /* alternate paragraph background color */
+  --paragraph-headline-color: darkmagenta; /* paragraph headline color */
+
+  /* fonts */
+  --heading-font: "Dancing Script", sans-serif;
+  --paragraph-font: "EB Garamond", Helvetica, sans-serif;
+
+  /* headline colors */
+  --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+  --headline-color-on-color: white; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+  
+  /* nav colors */
+  --nav-link-color: var(--accent2-color);
+  --nav-background-color: var(--secondary-color);
+  --nav-hover-link-color: var(--accent1-color);
+  --nav-hover-background-color: var(--accent2-color);
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--secondary-color);
+}
+
+.logo, .icon {
+    width: 80px;
+}
+
+nav a {
+    text-align: center;
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.home-title {
+    color: var(--headline-color-on-color);
+}
+
+h4 {
+    color: var(--headline-color-on-color);
+}
+
+.button-box {
+    text-align: center;
+}
+
+.book, .join {
+    background-color: var(--nav-background-color);
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+.book:hover, .join:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: var(--secondary-color);
+}
+
+.msg {
+    background-color: var(--paragraph-background-color);
+}
+.msg h2 {
+    color: var(--paragraph-headline-color);
+}
+.msg p {
+    color: var(--paragraph-color-on-color);
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+footer p {
+    font-size: 1.2em;
+}
+footer a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+}
+footer p a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
